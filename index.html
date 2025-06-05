@@ -8,24 +8,24 @@
 </head>
 <body>
 
-   <div> 
-    <header>
-    <h1>John Cortez</h1>
-    <p>Web Developer | Designer</p>
-       <div class="profile-image">
-        <img src="./Images/john_cortez.jpg" alt="John Cortez Picture" class="top-left">
-    </div>
-    <div>
-        <nav class="navbar">
-        <ul class="menu">
-        <a href="#about"> <li>About</li></a>
-        <a href="#projects"><li>Projects</li></a>
-        <a href="#contact"><li>Contact</li></a>
-        </ul>
-        </nav>
-    </div>
-  </header>
-  </div>
+        <div> 
+          <header>
+                  <h1>John Cortez</h1>
+                  <p>Web Developer | Designer</p>
+            <div class="profile-image">
+              <img src="./Images/john_cortez.jpg" alt="John Cortez Picture" class="top-left">
+            </div>
+          <div>
+              <nav class="navbar">
+              <ul class="menu">
+              <a href="#about"> <li>About</li></a>
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#contact"><li>Contact</li></a>
+              </ul>
+              </nav>
+          </div>
+        </header>
+        </div>
   <main>
 
   <section id="about">
@@ -49,25 +49,23 @@
     
   </section>
 
-  <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: janilcort@gmail.com</p>
-  <div class="contact">
-    <form class="form-message form" action="" method="post">
-      <label for="firstName">First Name</label>
-      <input id="firstName" name="firstName" type="text" placeholder="First Name">
-      <label for="lastName">Last Name</label>
-      <input id="lastName" name="lastName" type="text" placeholder="Last Name">
-      <label for="email">Email Address</label>
-      <input id="email" name="email" type="email" placeholder="Email Address">
-      <label for="phone">Phone Number</label>
-      <input id="phone" name="phone" type="tel" placeholder="Phone Number">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Please Write your message!"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: janilcort@gmail.com</p>
+    <div class="form-message">
+					<form class="form" action="" method="post">
+						<input class="form" type="text" value="" placeholder="First Name">
+						<input class="form" type="text" value="" placeholder="Last Name">
+						<input class="form" type="text" value="" placeholder="Email Address">
+						<input class="form" type="text" value="" placeholder="Phone Number">
+            <textarea class="form" name="message" placeholder="Please Write your message!"></textarea>
+						<div class="submit">
+            <button>Submit</button> 
+						</div>
+					</form>
+				</div>
+
+  </section>
 
   <footer>
     <p>&copy; 2025 John Cortez. All rights reserved.</p>
