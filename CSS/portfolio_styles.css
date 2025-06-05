@@ -1,0 +1,208 @@
+body {
+  font-family: comic, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #5db0e7;
+  color: #080606;
+}
+
+header {
+  background: #333030;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  background: url(/images/headerimg.webp) ;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #ccc;
+}
+
+.profile-image img {
+  width: 400px;
+  height: 300px;
+  border-radius: 90px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  align-content: left;
+  border-color: solid black;
+}
+
+.contact {
+    text-align: center;
+
+}
+
+
+
+.menu {
+    color: #f00;
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.form-message {
+    text-align: center;
+    height: 100px;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 80;
+    right: 30;
+    width: 100px;
+    height: auto;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.github { 
+  width: 80%;
+  height: auto;
+  opacity: 0.9;
+  transition: .3s ease;
+  transform: scale(.8);
+}
+
+.container {
+  position: relative;
+}
+
+.github:hover {
+  transform: scale(1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  min-width: 250px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #f7fbff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 1px solid #b3d6f2;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .form {
+    max-width: 400px;
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    max-width: 100%;
+    padding: 1.2rem 0.5rem;
+  }
+  .contact {
+    padding: 0 0.2rem;
+  }
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #b3d6f2;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1.5px solid #5db0e7;
+  outline: none;
+}
+
+.form button, .form input[type="submit"] {
+  background: #5db0e7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.form button:hover, .form input[type="submit"]:hover {
+  background: #357ab8;
+}
+
+.form label {
+  align-self: flex-start;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #357ab8;
+  letter-spacing: 0.5px;
+}
