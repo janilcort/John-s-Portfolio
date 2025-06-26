@@ -39,10 +39,18 @@
     <div class="project">
       <h3>Visit my Github Account to see my work!</h3>
       <p>github.com/janilcort</p>
-      <div class="container">
-  <img class="github" src="./images/github.png" alt="github image" width="1000" height="300">
-  <div class="center"></div>
-</div>
+      <!-- Slideshow Start -->
+      <div class="slideshow-container">
+        <img class="slide-img" src="./images/img1.png" alt="Project 1">
+        <img class="slide-img" src="./images/img2.jpg" alt="Project 2">
+        <img class="slide-img" src="./images/img3.png" alt="Project 3">
+        <img class="slide-img" src="./images/img4.jpeg" alt="Project 4">
+        <img class="slide-img" src="./images/img5.png" alt="Project 5">
+        <img class="slide-img" src="./images/img6.png" alt="Project 6">
+        <button class="slide-btn" id="prevBtn">&#10094; Prev</button>
+        <button class="slide-btn" id="nextBtn">Next &#10095;</button>
+      </div>
+      <!-- Slideshow End -->
       <a class="img-position" href="https://github.com/janilcort">View Projects</a>
     </div>
     
@@ -52,22 +60,51 @@
     <h2>Contact</h2>
     <p>Email: janilcort@gmail.com</p>
     <div class="form-message">
-					<form class="form" action="https://formspree.io/f/xeokopeg" method="post">
-						<input class="form" name="fname" type="text" value="" placeholder="First Name">
-						<input class="form" name="lname" type="text" value="" placeholder="Last Name">
-						<input class="form" name="email" type="text" value="" placeholder="Email Address">
-						<input class="form" name="phonenumber" type="text" value="" placeholder="Phone Number">
+          <form class="form" action="https://formspree.io/f/xeokopeg" method="post">
+            <input class="form" name="fname" type="text" value="" placeholder="First Name">
+            <input class="form" name="lname" type="text" value="" placeholder="Last Name">
+            <input class="form" name="email" type="text" value="" placeholder="Email Address">
+            <input class="form" name="phonenumber" type="text" value="" placeholder="Phone Number">
             <textarea class="form" name="message" placeholder="Please Write your message!"></textarea>
-						<div class="submit">
+            <div class="submit">
             <button>Submit</button> 
-						</div>
-					</form>
-				</div>
+            </div>
+          </form>
+        </div>
 
   </section>
 
   <footer>
     <p>&copy; 2025 John Cortez. All rights reserved.</p>
   </footer>
+
+  <!-- Slideshow Script -->
+  <script src="./js/portfolio.js"></script>
+  <script>
+    // Simple slideshow logic
+    (function() {
+      var slides = document.querySelectorAll('.slide-img');
+      var current = 0;
+      var prevBtn = document.getElementById('prevBtn');
+      var nextBtn = document.getElementById('nextBtn');
+      function showSlide(idx) {
+        slides.forEach(function(img, i) {
+          img.style.display = (i === idx) ? 'block' : 'none';
+        });
+      }
+      prevBtn.addEventListener('click', function() {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      });
+      nextBtn.addEventListener('click', function() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      });
+      // Optional: auto-advance every 5 seconds
+      // setInterval(function() {
+      //   nextBtn.click();
+      // }, 5000);
+    })();
+  </script>
 </body>
 </html>
