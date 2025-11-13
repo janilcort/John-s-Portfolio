@@ -6,3 +6,5 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 - Projects section with detailed case studies
 - link on my projects on Github.
 - Contact form integration
+- Form validation
+- Slide show
