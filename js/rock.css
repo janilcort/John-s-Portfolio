@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.container {
+  max-width: 420px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  padding: 36px 28px 28px 28px;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  margin-bottom: 22px;
+  color: #2a3a5e;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.players, .choices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 16px;
+}
+.players div, .choices div {
+  flex: 1;
+  margin: 0 6px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2a3a5e;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #b0b8c1;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  background: #f7fafd;
+  transition: border 0.2s;
+}
+input[type="text"]:focus, select:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+button {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #009ec3 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+#result {
+  margin-top: 22px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a2a3a;
+  min-height: 36px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 4vw 18px 4vw;
+  }
+  .players, .choices {
+    flex-direction: column;
+    gap: 0;
+  }
+}

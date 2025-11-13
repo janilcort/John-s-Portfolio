@@ -8,37 +8,108 @@
 </head>
 <body>
 
-        <div> 
-          <header>
-                  <h1>John Cortez</h1>
-                  <p>Web Developer | Designer</p>
-            <div class="profile-image">
-              <img src="./images/John_cortez.jpg" alt="John Cortez Picture" class="top-left">
-            </div>
-          <div>
-              <nav class="navbar">
-              <ul class="menu">
-              <a href="#about"> <li>About</li></a>
-              <a href="#projects"><li>Projects</li></a>
-              <a href="#contact"><li>Contact</li></a>
-              </ul>
-              </nav>
-          </div>
-        </header>
-        </div>
+  <div> 
+    <header>
+      <h1>John Cortez</h1>
+      <p>C# / .NET Developer | Web Developer</p>
+
+      <div class="profile-image">
+        <img src="./images/John_cortez.jpg" alt="John Cortez Picture" class="top-left">
+      </div>
+
+      <div>
+        <nav class="navbar">
+          <ul class="menu">
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a passionate web developer who enjoys building beautiful and functional websites. I specialize in frontend development using HTML, CSS, and JavaScript. I'm currently in school
-        at Academy Of Learning Career College. I'm a Father of Four beautiful children. When I'm not coding, you'll find me exploring the nature.
+    <p>
+      I’m a C# / .NET student developer with a growing passion for building real-world applications.
+      I enjoy creating both web and console projects using C#, ASP.NET MVC, Entity Framework, and SQL.
+      I am currently studying at Academy of Learning Career College, where I’m building a solid foundation
+      in software development and web technologies.
+    </p>
+    <p>
+      Outside of coding, I’m a father of four amazing kids and I enjoy spending time with my family and exploring nature.
+      I’m always learning, improving my skills, and working on new projects that help me grow as a developer.
     </p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
+
+    <!-- Highlighted Project List -->
+    <div class="project-list">
+
+      <div class="project">
+        <h3>Car Insurance MVC Application</h3>
+        <p>
+          An ASP.NET MVC web application that calculates insurance quotes based on driver information.
+          This project uses MVC architecture, Razor views, and Entity Framework to save and manage customer data.
+        </p>
+        <p><strong>Tech:</strong> C#, ASP.NET MVC, Entity Framework, SQL Server, Razor, GitHub</p>
+        <a href="https://github.com/janilcort/CarInsurance" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Code-First Student Database (Console App)</h3>
+        <p>
+          A console application that uses Entity Framework Code-First to create a Student database.
+          The app defines a Student class, generates the database automatically, and inserts a student record.
+        </p>
+        <p><strong>Tech:</strong> C#, .NET, Entity Framework Code-First, SQL Server, LINQ</p>
+        <a href="https://github.com/janilcort/CodeFirstStudentApp" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>TwentyOne Game (Blackjack Console App)</h3>
+        <p>
+          A fully interactive Blackjack-style card game built in C#. This project uses
+          object-oriented programming principles such as classes, inheritance, interfaces, 
+          lists, and error handling. The player competes against the dealer using
+          real card deck logic, hit/stay decisions, and automatic win/lose conditions.
+        </p>
+        <p><strong>Tech:</strong> C#, OOP, Classes &amp; Objects, Inheritance, Polymorphism, Deck &amp; Card logic</p>
+        <a href="https://github.com/janilcort/TwentyOne" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Student Daily Report</h3>
+        <p>
+          A simple console program that collects student information such as name, course,
+          page number, and help needed. This project helped build confidence with basic input,
+          data types, and console interaction.
+        </p>
+        <p><strong>Tech:</strong> C#, Console I/O, Data Types</p>
+        <a href="https://github.com/janilcort" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>OOP &amp; LINQ Practice Projects</h3>
+        <p>
+          A collection of small projects focused on object-oriented programming and LINQ,
+          including classes, inheritance, interfaces, operator overloading, and collection queries.
+        </p>
+        <p><strong>Tech:</strong> C#, OOP, LINQ, Collections</p>
+        <a href="https://github.com/janilcort" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+
+    <!-- Original GitHub + Slideshow Section -->
     <div class="project">
-      <h3>Visit my Github Account to see my work!</h3>
-      <p>github.com/janilcort</p>
+      <h3>More Projects on GitHub</h3>
+      <p>Visit my GitHub account to see more of my work and ongoing practice projects.</p>
+      <p><strong>GitHub:</strong> github.com/janilcort</p>
+
       <!-- Slideshow Start -->
       <div class="slideshow-container">
         <img class="slide-img" src="./images/img1.png" alt="Project 1">
@@ -51,27 +122,27 @@
         <button class="slide-btn" id="nextBtn">Next &#10095;</button>
       </div>
       <!-- Slideshow End -->
-      <a class="img-position" href="https://github.com/janilcort">View Projects</a>
+
+      <a class="img-position" href="https://github.com/janilcort" target="_blank">View All Projects on GitHub</a>
     </div>
-    
+
   </section>
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p>Email: janilcort@gmail.com</p>
+    <p>Email: <a href="mailto:janilcort@gmail.com">janilcort@gmail.com</a></p>
     <div class="form-message">
-          <form class="form" action="https://formspree.io/f/xeokopeg" method="post">
-            <input class="form" name="fname" type="text" value="" placeholder="First Name">
-            <input class="form" name="lname" type="text" value="" placeholder="Last Name">
-            <input class="form" name="email" type="text" value="" placeholder="Email Address">
-            <input class="form" name="phonenumber" type="text" value="" placeholder="Phone Number">
-            <textarea class="form" name="message" placeholder="Please Write your message!"></textarea>
-            <div class="submit">
-            <button>Submit</button> 
-            </div>
-          </form>
+      <form class="form" action="https://formspree.io/f/xeokopeg" method="post">
+        <input class="form" name="fname" type="text" placeholder="First Name">
+        <input class="form" name="lname" type="text" placeholder="Last Name">
+        <input class="form" name="email" type="text" placeholder="Email Address">
+        <input class="form" name="phonenumber" type="text" placeholder="Phone Number">
+        <textarea class="form" name="message" placeholder="Please write your message!"></textarea>
+        <div class="submit">
+          <button>Submit</button> 
         </div>
-
+      </form>
+    </div>
   </section>
 
   <footer>
@@ -87,23 +158,27 @@
       var current = 0;
       var prevBtn = document.getElementById('prevBtn');
       var nextBtn = document.getElementById('nextBtn');
+
       function showSlide(idx) {
         slides.forEach(function(img, i) {
           img.style.display = (i === idx) ? 'block' : 'none';
         });
       }
-      prevBtn.addEventListener('click', function() {
-        current = (current - 1 + slides.length) % slides.length;
-        showSlide(current);
-      });
-      nextBtn.addEventListener('click', function() {
-        current = (current + 1) % slides.length;
-        showSlide(current);
-      });
-      // Optional: auto-advance every 5 seconds
-      // setInterval(function() {
-      //   nextBtn.click();
-      // }, 5000);
+
+      if (prevBtn && nextBtn && slides.length > 0) {
+        prevBtn.addEventListener('click', function() {
+          current = (current - 1 + slides.length) % slides.length;
+          showSlide(current);
+        });
+
+        nextBtn.addEventListener('click', function() {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        });
+
+        // Show first slide on load
+        showSlide(0);
+      }
     })();
   </script>
 </body>
